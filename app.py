@@ -16,10 +16,9 @@ def model_prediction(test_image):
 st.header("Disease Recognition")
 test_image = st.file_uploader("Choose an Image:")
 if(st.button("Show Image")):
-    st.image(test_image,width=4,use_column_width=True)
+    st.image(test_image,width=2,use_column_width=True)
 #Predict button
 if(st.button("Predict")):
-    st.snow()
     st.write("Our Prediction")
     result_index = model_prediction(test_image)
     #Reading Labels
