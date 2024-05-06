@@ -15,7 +15,7 @@ if uploaded is not None:
     model = load_model('model.h5')
 
     def preprocess_image(uploaded_image):
-        resized_image = uploaded_image.resize((256, 256))
+        resized_image = uploaded_image.resize((128, 128))
         image_array = img_to_array(resized_image)
         image_array /= 255.
         return image_array
